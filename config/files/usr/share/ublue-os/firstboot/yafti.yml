@@ -6,7 +6,7 @@ screens:
     source: yafti.screen.title
     values:
       title: "Welcome to Fedora (underlinejakez's custom fedora)"
-      icon: "/usr/share/icons/hicolor/scalable/apps/start-here.svg"
+      icon: "/path/to/icon"
       description: |
         This guided installer will help you get started with your new system.
 
@@ -25,6 +25,7 @@ screens:
           default: true
           packages:
             - Clapper: com.github.rafostar.Clapper
+            - Extension Manager: com.mattjakeman.ExtensionManager
             - Flatseal: com.github.tchx84.Flatseal
         Utility Apps:
           description: Utility Apps
@@ -56,7 +57,9 @@ screens:
     source: yafti.screen.title
     values:
       title: "All done!"
-      icon: "/usr/share/icons/hicolor/scalable/apps/start-here.svg"
+      icon: "/path/to/icon"
       links:
         - "Install More Applications":
             run: /usr/bin/gnome-software
+      description: |
+        Thanks for trying uBlue, we hope you enjoy it!\
