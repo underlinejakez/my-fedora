@@ -6,7 +6,7 @@ screens:
     source: yafti.screen.title
     values:
       title: "Welcome to Fedora (underlinejakez's custom fedora)"
-      icon: "/usr/share/fedora-logos/fedora_logo.svg"
+      icon: "/usr/share/icons/hicolor/scalable/apps/start-here.svg"
       description: |
         This guided installer will help you get started with your new system.
 
@@ -27,7 +27,7 @@ screens:
             - Clapper: com.github.rafostar.Clapper
             - Flatseal: com.github.tchx84.Flatseal
         Utility Apps:
-          descriptions: Utility Apps
+          description: Utility Apps
           default: false
           packages:
             - qBittorrent: org.qbittorrent.qBittorrent
@@ -56,7 +56,7 @@ screens:
     source: yafti.screen.title
     values:
       title: "All done!"
-      icon: "/usr/share/fedora-logos/fedora_logo.svg"
+      icon: "/usr/share/icons/hicolor/scalable/apps/start-here.svg"
       links:
         - "Install More Applications":
             run: /usr/bin/gnome-software
