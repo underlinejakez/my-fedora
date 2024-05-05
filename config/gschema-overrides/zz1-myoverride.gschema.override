@@ -1,0 +1,20 @@
+[org.gnome.desktop.interface]
+gtk-theme='adw-gtk3'
+
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
+
+[org.gnome.desktop.peripherals.touchpad:GNOME-Greeter]
+tap-to-click=true
+
+[org.gnome.desktop.wm.keybindings]
+toggle-fullscreen=['<Shift><Super>f']
+
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:minimize,close'
+
+[org.gnome.mutter]
+experimental-features=['kms-modifiers']
+
+[org.gnome.shell]
+favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'org.gnome.Console.desktop']

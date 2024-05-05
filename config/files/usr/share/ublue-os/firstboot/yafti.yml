@@ -1,0 +1,62 @@
+title: Welcome to Fedora
+properties:
+  mode: "run-on-change"
+screens:
+  first-screen:
+    source: yafti.screen.title
+    values:
+      title: "Welcome to Fedora (underlinejakez's custom fedora)"
+      icon: "/usr/share/fedora-logos/fedora_logo.svg"
+      description: |
+        This guided installer will help you get started with your new system.
+
+  applications:
+    source: yafti.screen.package
+    values:
+      title: Application Installer
+      show_terminal: true
+      package_manager: yafti.plugin.flatpak
+      package_manager_defaults:
+        user: false
+        system: true
+      groups:
+        Extra Apps for GNOME:
+          description: Extra Apps for GNOME
+          default: true
+          packages:
+            - Clapper: com.github.rafostar.Clapper
+            - Flatseal: com.github.tchx84.Flatseal
+        Utility Apps:
+          descriptions: Utility Apps
+          default: false
+          packages:
+            - qBittorrent: org.qbittorrent.qBittorrent
+        Development:
+          description: Development
+          default: false
+          packages:
+            - GNOME Boxes: org.gnome.Boxes
+            - GNOME Builder: org.gnome.Builder
+            - VSCodium: com.vscodium.codium
+            - Workbench: re.sonny.Workbench
+        Gaming:
+          description: "Rock and Stone!"
+          default: false
+          packages:
+            - Prism Launcher: org.prismlauncher.PrismLauncher
+            - Steam: com.valvesoftware.Steam
+        Streaming:
+          description: Streaming
+          default: false
+          packages:
+            - Stremio: com.stremio.Stremio
+            - Spotify: com.spotify.Client
+
+  final-screen:
+    source: yafti.screen.title
+    values:
+      title: "All done!"
+      icon: "/usr/share/fedora-logos/fedora_logo.svg"
+      links:
+        - "Install More Applications":
+            run: /usr/bin/gnome-software
