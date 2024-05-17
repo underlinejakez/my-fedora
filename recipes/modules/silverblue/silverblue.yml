@@ -1,4 +1,4 @@
 modules:
-  - from-file: ../shared/main.yml
+  - from-file: modules/shared/main.yml
   - from-file: packages.yml
   - from-file: gschema.yml
