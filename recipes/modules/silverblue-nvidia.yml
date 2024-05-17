@@ -1,5 +1,0 @@
-modules:
-  - type: rpm-ostree
-    remove:
-      - gnome-shell-extension-supergfxctl-gex
-      - supergfxctl

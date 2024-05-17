@@ -1,0 +1,5 @@
+[org.gnome.desktop.interface]
+gtk-theme='adw-gtk3'
+
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:maximize,minimize,close'

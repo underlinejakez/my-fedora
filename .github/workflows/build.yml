@@ -22,6 +22,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
+          - kinoite-main.yml
+          - kinoite-nvidia.yml
           - silverblue-main.yml
           - silverblue-nvidia.yml
     steps:

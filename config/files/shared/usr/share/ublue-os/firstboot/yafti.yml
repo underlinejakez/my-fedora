@@ -62,4 +62,4 @@ screens:
         - "Install More Applications":
             run: /usr/bin/gnome-software
       description: |
-        Thanks for trying uBlue, we hope you enjoy it!\
+        Thanks for trying uBlue, we hope you enjoy it!

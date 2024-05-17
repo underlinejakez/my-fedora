@@ -1,0 +1,4 @@
+modules:
+  - from-file: ../shared/main.yml
+  - from-file: packages.yml
+  - from-file: files.yml

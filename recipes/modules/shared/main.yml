@@ -1,0 +1,4 @@
+modules:
+  - from-file: packages.yml
+  - from-file: files.yml
+  - from-file: gschema.yml

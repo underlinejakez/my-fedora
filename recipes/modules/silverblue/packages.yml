@@ -1,0 +1,32 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - gnome-console
+    remove:
+      - gnome-classic-session
+      - gnome-classic-session-xsession
+      - gnome-terminal
+      - gnome-terminal-nautilus
+      - gnome-tweaks
+      - qadwaitadecorations-qt5
+
+  - type: default-flatpaks
+    system:
+      install:
+        - org.gnome.baobab
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Characters
+        - org.gnome.clocks
+        - org.gnome.Connections
+        - org.gnome.Contacts
+        - org.gnome.Evince
+        - org.gnome.font-viewer
+        - org.gnome.Logs
+        - org.gnome.Loupe
+        - org.gnome.Maps
+        - org.gnome.NautilusPreviewer
+        - org.gnome.SimpleScan
+        - org.gnome.Snapshot
+        - org.gnome.TextEditor
+        - org.gnome.Weather

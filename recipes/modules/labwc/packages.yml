@@ -1,0 +1,7 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/crion/sfwbar/repo/fedora-%OS_VERSION%/crion-sfwbar-fedora-%OS_VERSION%.repo
+install:
+  - foot
+  - labwc
+  - sfwbar
