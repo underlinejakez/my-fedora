@@ -1,4 +1,4 @@
 modules:
   - from-file: modules/shared/main.yml
-  - from-file: packages.yml
-  - from-file: gschema.yml
+  - from-file: modules/silverblue/packages.yml
+  - from-file: modules/silverblue/gschema.yml

@@ -1,4 +1,4 @@
 modules:
   - from-file: modules/shared/main.yml
-  - from-file: packages.yml
-  - from-file: files.yml
+  - from-file: modules/labwc/packages.yml
+  - from-file: modules/labwc/files.yml
