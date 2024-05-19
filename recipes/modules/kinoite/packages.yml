@@ -1,3 +1,5 @@
 type: rpm-ostree
+install:
+  - vlc
 remove:
   - kde-gtk-config

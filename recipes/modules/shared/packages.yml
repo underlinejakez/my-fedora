@@ -1,16 +1,11 @@
 modules:
   - type: rpm-ostree
-    install:
-      - fish
     remove:
       - firefox
       - firefox-langpacks
       - nvtop
 
   - type: default-flatpaks
-    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-    repo-name: flathub
-    repo-title: "Flathub (system-wide)"
     system:
       install:
         - org.mozilla.firefox

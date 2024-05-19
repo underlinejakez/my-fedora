@@ -23,9 +23,10 @@ jobs:
         recipe:
           # !! Add your recipes here 
           - kinoite-main.yml
-          - kinoite-nvidia.yml
+          # - kinoite-nvidia.yml
           - silverblue-main.yml
-          - silverblue-nvidia.yml
+          # - silverblue-nvidia.yml
+          - silverblue-dx-nvidia.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image

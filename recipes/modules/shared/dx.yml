@@ -1,0 +1,6 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - fish
+      - python3-lsp-server+all
+      - python3-flake*

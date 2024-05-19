@@ -30,3 +30,10 @@ modules:
         - org.gnome.Snapshot
         - org.gnome.TextEditor
         - org.gnome.Weather
+
+        - com.github.rafostar.Clapper
+        - com.github.tchx84.Flatseal
+        - com.mattjakeman.ExtensionManager
+
+        # https://github.com/blue-build/modules/issues/231
+        - org.mozilla.firefox
