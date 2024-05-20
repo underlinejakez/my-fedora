@@ -1,5 +1,8 @@
 [org.gnome.desktop.interface]
+font-antialiasing='rgba'
+gtk-enable-primary-paste=false
 gtk-theme='adw-gtk3'
+show-battery-percentage=true
 
 [org.gnome.desktop.peripherals.touchpad]
 tap-to-click=true
@@ -18,3 +21,6 @@ experimental-features=['kms-modifiers']
 
 [org.gnome.shell]
 favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'org.gnome.Console.desktop']
+
+[org.gnome.software]
+packaging-format-preference=['flatpak:flathub-user', 'flatpak:flathub-system']

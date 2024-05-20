@@ -1,11 +1,21 @@
 modules:
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%repo
     remove:
       - firefox
       - firefox-langpacks
       - nvtop
 
   - type: default-flatpaks
+    notify: true
     system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-system
+      repo-title: "Flathub (System)"
       install:
         - org.mozilla.firefox
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-user
+      repo-title: "Flathub"

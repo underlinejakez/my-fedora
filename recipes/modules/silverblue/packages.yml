@@ -2,15 +2,20 @@ modules:
   - type: rpm-ostree
     install:
       - gnome-console
+      - nautilus-python
+      - python3-icoextract
+      - rom-properties-gtk3
     remove:
       - gnome-classic-session
       - gnome-classic-session-xsession
+      - gnome-software-rpm-ostree
       - gnome-terminal
       - gnome-terminal-nautilus
       - gnome-tweaks
       - qadwaitadecorations-qt5
 
   - type: default-flatpaks
+    notify: true
     system:
       install:
         - org.gnome.baobab
