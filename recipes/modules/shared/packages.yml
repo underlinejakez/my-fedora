@@ -1,7 +1,7 @@
 modules:
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%repo
+      - https://copr.fedorainfracloud.org/coprs/kylegospo/rom-properties/repo/fedora-%OS_VERSION%/kylegospo-rom-properties-fedora-%OS_VERSION%.repo
     remove:
       - firefox
       - firefox-langpacks
