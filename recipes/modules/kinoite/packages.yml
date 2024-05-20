@@ -1,6 +1,6 @@
 type: rpm-ostree
 install:
-  - rom-properties-kf5
+  - rom-properties-kf6
   - vlc
 remove:
   - kde-gtk-config
