@@ -1,7 +1,4 @@
 [org.gnome.desktop.interface]
-font-antialiasing='rgba'
-gtk-enable-primary-paste=false
-gtk-theme='adw-gtk3'
 show-battery-percentage=true
 
 [org.gnome.desktop.peripherals.touchpad]

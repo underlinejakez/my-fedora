@@ -1,4 +1,6 @@
 [org.gnome.desktop.interface]
+font-antialiasing='rgba'
+gtk-enable-primary-paste=false
 gtk-theme='adw-gtk3'
 
 [org.gnome.desktop.wm.preferences]

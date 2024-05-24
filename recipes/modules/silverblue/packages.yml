@@ -3,20 +3,24 @@ modules:
     install:
       - gnome-console
       - nautilus-python
-      - python3-icoextract
-      - rom-properties-gtk3
+      # - python3-icoextract
     remove:
       - gnome-classic-session
       - gnome-classic-session-xsession
-      - gnome-software-rpm-ostree
+      # I don't know if doing this helps something
+      # - gnome-software-rpm-ostree
       - gnome-terminal
       - gnome-terminal-nautilus
       - gnome-tweaks
       - qadwaitadecorations-qt5
 
+  # https://github.com/blue-build/modules/issues/231
   - type: default-flatpaks
     notify: true
     system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-system
+      repo-title: "Flathub (System)"
       install:
         - org.gnome.baobab
         - org.gnome.Calculator
@@ -40,5 +44,8 @@ modules:
         - com.github.tchx84.Flatseal
         - com.mattjakeman.ExtensionManager
 
-        # https://github.com/blue-build/modules/issues/231
         - org.mozilla.firefox
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-user
+      repo-title: "Flathub"

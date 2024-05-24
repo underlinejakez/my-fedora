@@ -1,0 +1,6 @@
+modules:
+  - from-file: modules/shared/dx.yml
+
+  - type: rpm-ostree
+    install:
+      - rom-properties-kf6

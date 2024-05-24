@@ -22,11 +22,14 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
+          - kinoite-dx-nvidia.yml
           - kinoite-main.yml
           # - kinoite-nvidia.yml
+          - silverblue-dx.yml
+          - silverblue-dx-nvidia.yml
           - silverblue-main.yml
           # - silverblue-nvidia.yml
-          - silverblue-dx-nvidia.yml
+          
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
